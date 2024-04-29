@@ -8,4 +8,9 @@ public class Bicycle extends Vehicle {
     public void updateTyre() {
         System.out.println("Changing bicycle tyre");
     }
+
+    @Override
+    public void checkEngine() {
+        //will do nothing
+    }
 }
