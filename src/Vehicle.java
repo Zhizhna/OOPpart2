@@ -1,5 +1,4 @@
 public abstract class Vehicle {
-
     protected String modelName;
     protected int wheelsCount;
 
@@ -8,8 +7,6 @@ public abstract class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
-    public abstract void updateTyre();
-
     public String getModelName() {
         return modelName;
     }
@@ -17,4 +14,6 @@ public abstract class Vehicle {
     public int getWheelsCount() {
         return wheelsCount;
     }
+
+    public abstract void service(); // Introducing a method for servicing
 }

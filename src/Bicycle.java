@@ -5,12 +5,11 @@ public class Bicycle extends Vehicle {
     }
 
     @Override
-    public void updateTyre() {
-        System.out.println("Changing bicycle tyre");
+    public void service() {
+        updateTyre();
     }
 
-    @Override
-    public void checkEngine() {
-        //will do nothing
+    private void updateTyre() {
+        System.out.println("Changing bicycle tyre");
     }
 }

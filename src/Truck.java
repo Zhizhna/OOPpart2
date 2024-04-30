@@ -5,16 +5,21 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    public void updateTyre() {
+    public void service() {
+        updateTyre();
+        checkEngine();
+        checkTrailer();
+    }
+
+    private void updateTyre() {
         System.out.println("Changing truck tyre");
     }
 
-    @Override
-    public void checkEngine() {
+    private void checkEngine() {
         System.out.println("Checking truck engine");
     }
 
-    public void checkTrailer() {
+    private void checkTrailer() {
         System.out.println("Checking truck trailer");
     }
 }
